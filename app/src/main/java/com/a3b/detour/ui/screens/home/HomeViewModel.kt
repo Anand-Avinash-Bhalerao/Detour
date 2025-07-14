@@ -16,12 +16,13 @@ class HomeViewModel(
     val apps: StateFlow<List<AppInfo>> = _apps
 
     init {
+
         loadApps()
     }
 
     private fun loadApps() {
         viewModelScope.launch(Dispatchers.IO) {
-            _apps.value = appRepository.getInstalledApps()
+            _apps.value = appRepository.getAllInstalledApps()
         }
     }
 

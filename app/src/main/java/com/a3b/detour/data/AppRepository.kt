@@ -5,7 +5,7 @@ import android.content.pm.PackageManager
 import com.a3b.detour.model.AppInfo
 
 class AppRepository(private val context: Context) {
-    fun getInstalledApps(): List<AppInfo> {
+    fun getAllInstalledApps(): List<AppInfo> {
         val pm = context.packageManager
         return pm.getInstalledApplications(PackageManager.GET_META_DATA)
             .filter { pm.getLaunchIntentForPackage(it.packageName) != null }
