@@ -1,4 +1,7 @@
 package com.a3b.detour.ui.screens.home
 
-class HomeViewModel {
+import androidx.lifecycle.ViewModel
+
+class HomeViewModel : ViewModel(){
+
 }
