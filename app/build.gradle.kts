@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.koin.compose.viewmodel.navigation)
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)
+    implementation(libs.coil.compose)
 
     api(libs.koin.annotations)
     ksp(libs.koin.ksp.compiler)
